@@ -1,14 +1,12 @@
-pipeline{
-  agent any
-  stages{
-    stage('build'){
-      steps{
-        pwd
-
-      }
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo '开始编译构建'
+                sh 'pwd'
+            }
+        }
 
     }
-
-  }
-
 }
