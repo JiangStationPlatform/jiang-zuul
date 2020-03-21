@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo '开始编译构建'
-                sh 'pwd'
+                sh 'ls -l'
             }
         }
 
