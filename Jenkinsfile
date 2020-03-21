@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo '==>start build'
                 sh 'cd docker'
-                sh 'docker build -t jenkin-zuul .'
+                sh 'ls'
             }
         }
     }
