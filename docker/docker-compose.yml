@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  jenkins-zuul:
+    restart: always
+    image: jenkins-zuul
+    container_name: jenkins-zuul
+    ports:
+      - 8769:8769

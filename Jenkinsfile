@@ -16,7 +16,13 @@ pipeline {
         stage('build') {
             steps {
                 echo '==>start build'
-                sh 'cd docker && ls'
+                sh 'cd docker && docker build -t jenkins-zuul .'
+            }
+        }
+        stage('run') {
+            steps {
+                echo '==>start run'
+                sh 'cd docker && docker-compose down && docker-compose up -d'
             }
         }
     }
