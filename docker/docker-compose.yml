@@ -6,3 +6,7 @@ services:
     container_name: jenkins-zuul
     ports:
       - 8769:8769
+    networks:
+      - zuul_network
+networks:
+  zuul_network:
