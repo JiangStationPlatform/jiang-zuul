@@ -8,17 +8,17 @@ pipeline {
             }
         }
         stage('copy') {
-                steps {
-                    echo '==>start copy'
-                    sh 'cp target/jiang-zuul-1.0.0-SNAPSHOT.jar docker'
-                }
+            steps {
+                echo '==>start copy'
+                sh 'cp target/jiang-zuul-1.0.0-SNAPSHOT.jar docker'
+            }
         }
         stage('build') {
-                steps {
-                    echo '==>start build'
-                    sh 'cd docker'
-                    sh 'docker build -t Jenkin-zuul .'
-                }
+            steps {
+                echo '==>start build'
+                sh 'cd docker'
+                sh 'docker build -t jenkin-zuul .'
+            }
         }
     }
 }
