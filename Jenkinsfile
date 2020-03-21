@@ -16,8 +16,7 @@ pipeline {
         stage('build') {
             steps {
                 echo '==>start build'
-                sh 'cd docker'
-                sh 'ls'
+                sh 'cd docker && ls'
             }
         }
     }
