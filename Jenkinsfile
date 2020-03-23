@@ -16,7 +16,7 @@ pipeline {
         stage('build') {
             steps {
                 echo '==>start build'
-                sh 'cd docker && docker build -t 35.241.113.30:5000/jiang-zuul .'
+                sh 'cd docker && docker build -t 104.199.166.17:5000/jiang-zuul .'
             }
         }
         stage('run') {
